@@ -20,7 +20,7 @@ public class ScoreDaoImpl implements ScoreDao {
 	 */
 	@Override
 	public ResultSet getRank(Connection con) throws SQLException {
-		String sql = "SELECT username,grade,DATE FROM score,USER WHERE score.`userId`=user.`id` ORDER BY grade DESC,DATE ASC";
+		String sql = "SELECT username,grade,DATE FROM score,user WHERE score.`userId`=user.`id` ORDER BY grade DESC,DATE ASC";
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		return pstmt.executeQuery();
 	}

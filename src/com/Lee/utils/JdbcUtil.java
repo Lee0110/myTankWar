@@ -6,9 +6,10 @@ import java.sql.SQLException;
 
 public class JdbcUtil {
 
+	static final String IP_ADDR = "请输入...";// 输入你的mysqlIP地址,本地则输入localhost
 	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	static final String DATABASE = "tankwar";
-	static final String DB_URL = "jdbc:mysql://localhost:3306/" + DATABASE
+	static final String DB_URL = "jdbc:mysql://" + IP_ADDR + ":3306/" + DATABASE
 			+ "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
 	// 数据库的用户名与密码，需要根据自己的设置
