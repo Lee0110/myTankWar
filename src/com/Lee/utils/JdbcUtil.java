@@ -13,8 +13,8 @@ public class JdbcUtil {
 			+ "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
 	// 数据库的用户名与密码，需要根据自己的设置
-	static final String USER = "root";
-	static final String PASS = "123";
+	static final String USER = "请输入...";
+	static final String PASS = "请输入...";
 
 	public static Connection getCon() throws SQLException {
 		try {
